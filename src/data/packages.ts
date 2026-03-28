@@ -51,7 +51,7 @@ export const packages: TourPackage[] = [
       "Private sunset in Kandy — cultural dance & Temple of the Tooth",
     ],
     includes: [
-      "10 nights accommodation",
+      "10 nights accommodation (3-star & 4-star hotels)",
       "Welcome Drink",
       "Air-conditioned private vehicle & driver",
       "English-speaking tour guide throughout",
