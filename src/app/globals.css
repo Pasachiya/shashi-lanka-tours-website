@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-jungle-50 dark:bg-jungle-950;
+    @apply text-jungle-900 dark:text-jungle-50;
+    @apply font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-display;
+  }
+
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { @apply bg-jungle-100 dark:bg-jungle-900; }
+  ::-webkit-scrollbar-thumb { @apply bg-jungle-400 dark:bg-jungle-600 rounded-full; }
+
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-jungle-500 rounded;
+  }
+
+  ::selection {
+    @apply bg-jungle-200 dark:bg-jungle-700 text-jungle-900 dark:text-jungle-50;
+  }
+}
+
+@layer components {
+  /* ── Layout ────────────────────────────────────── */
+  .section-px  { @apply px-4 sm:px-6 lg:px-8 xl:px-12; }
+  .container-xl { @apply max-w-7xl mx-auto; }
+
+  /* ── Buttons ────────────────────────────────────── */
+  .btn-primary {
+    @apply bg-jungle-600 hover:bg-jungle-700
+           dark:bg-jungle-500 dark:hover:bg-jungle-600
+           text-white font-sans font-semibold text-sm tracking-wide
+           px-6 py-3.5 rounded-xl
+           transition-all duration-300
+           hover:shadow-xl hover:shadow-jungle-600/30
+           hover:-translate-y-0.5
+           active:translate-y-0
+           inline-flex items-center justify-center gap-2
+           min-h-[48px] select-none;
+  }
+
+  .btn-outline {
+    @apply border-2 border-jungle-600 dark:border-jungle-400
+           text-jungle-700 dark:text-jungle-300
+           hover:bg-jungle-600 dark:hover:bg-jungle-500 hover:text-white dark:hover:text-white
+           font-sans font-semibold text-sm tracking-wide
+           px-6 py-3.5 rounded-xl
+           transition-all duration-300
+           hover:-translate-y-0.5
+           inline-flex items-center justify-center gap-2
+           min-h-[48px] select-none;
+  }
+
+  .btn-gold {
+    @apply bg-gold-500 hover:bg-gold-600
+           text-white font-sans font-bold text-sm tracking-wider
+           px-6 py-3.5 rounded-xl
+           transition-all duration-300
+           hover:shadow-xl hover:shadow-gold-500/30
+           hover:-translate-y-0.5
+           active:translate-y-0
+           inline-flex items-center justify-center gap-2
+           min-h-[48px] select-none;
+  }
+
+  .btn-ghost {
+    @apply text-jungle-700 dark:text-jungle-300
+           hover:bg-jungle-100 dark:hover:bg-jungle-800
+           font-sans font-medium text-sm
+           px-4 py-2.5 rounded-xl
+           transition-all duration-200
+           inline-flex items-center justify-center gap-2
+           min-h-[44px];
+  }
+
+  /* ── Cards ──────────────────────────────────────── */
+  .card {
+    @apply bg-white dark:bg-jungle-900
+           border border-jungle-100 dark:border-jungle-800
+           rounded-2xl shadow-sm
+           transition-all duration-300
+           hover:shadow-2xl hover:shadow-jungle-900/10 dark:hover:shadow-jungle-950/60
+           hover:-translate-y-1;
+  }
+
+  /* ── Form ───────────────────────────────────────── */
+  .input {
+    @apply w-full
+           bg-white dark:bg-jungle-900/60
+           border border-jungle-200 dark:border-jungle-700
+           text-jungle-900 dark:text-jungle-100
+           placeholder:text-jungle-400 dark:placeholder:text-jungle-500
+           rounded-xl px-4 py-3.5
+           focus:outline-none focus:ring-2 focus:ring-jungle-500 focus:border-transparent
+           transition-all duration-200
+           min-h-[50px] text-base;
+  }
+
+  .label {
+    @apply block text-sm font-semibold
+           text-jungle-700 dark:text-jungle-300
+           mb-1.5 tracking-wide;
+  }
+
+  /* ── Glass ──────────────────────────────────────── */
+  .glass {
+    @apply bg-white/80 dark:bg-jungle-900/80
+           backdrop-blur-xl
+           border border-white/30 dark:border-jungle-700/50;
+  }
+
+  /* ── Typography ─────────────────────────────────── */
+  .display-xl {
+    @apply font-display font-light italic
+           text-5xl sm:text-6xl lg:text-7xl xl:text-8xl
+           leading-[1.05] tracking-tight;
+  }
+
+  .display-lg {
+    @apply font-display font-light
+           text-4xl sm:text-5xl lg:text-6xl
+           leading-tight tracking-tight;
+  }
+
+  .section-title {
+    @apply font-display font-normal
+           text-3xl sm:text-4xl lg:text-5xl
+           text-jungle-900 dark:text-jungle-50
+           leading-tight;
+  }
+
+  .section-sub {
+    @apply font-sans text-base sm:text-lg
+           text-jungle-600 dark:text-jungle-400
+           leading-relaxed;
+  }
+
+  /* ── Decorative ─────────────────────────────────── */
+  .leaf-divider {
+    @apply flex items-center gap-3 text-jungle-400;
+  }
+  .leaf-divider::before,
+  .leaf-divider::after {
+    content: "";
+    @apply flex-1 h-px bg-jungle-200 dark:bg-jungle-800;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+
+  .animation-delay-100  { animation-delay: 100ms; }
+  .animation-delay-200  { animation-delay: 200ms; }
+  .animation-delay-300  { animation-delay: 300ms; }
+  .animation-delay-400  { animation-delay: 400ms; }
+  .animation-delay-600  { animation-delay: 600ms; }
+  .animation-delay-800  { animation-delay: 800ms; }
+  .animation-delay-1000 { animation-delay: 1000ms; }
+
+  /* Mobile-safe bottom padding for sticky bars */
+  .pb-safe { padding-bottom: env(safe-area-inset-bottom, 16px); }
+}
