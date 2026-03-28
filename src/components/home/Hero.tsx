@@ -47,7 +47,7 @@ export default function Hero() {
           >
             <span className="w-2 h-2 rounded-full bg-gold-400 animate-pulse" />
             <span className="text-jungle-200 text-xs sm:text-sm font-sans font-medium tracking-wider uppercase">
-              Sri Lanka's Premier Travel Experience
+              Sri Lanka&apos;s Premier Travel Experience
             </span>
           </div>
 

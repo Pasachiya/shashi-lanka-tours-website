@@ -80,7 +80,7 @@ export default function CustomPackageForm() {
           Your Custom Package is Ready!
         </h2>
         <p className="font-sans text-jungle-600 dark:text-jungle-400 text-base mb-8">
-          Complete the WhatsApp message to send it to our team. We'll craft your bespoke Sri Lanka journey within 24 hours!
+          Complete the WhatsApp message to send it to our team. We&apos;ll craft your bespoke Sri Lanka journey within 24 hours!
         </p>
         <button
           onClick={() => { setSubmitted(false); setData(initData()); setStep(1); }}
@@ -153,7 +153,7 @@ export default function CustomPackageForm() {
                   ))}
                 </div>
                 <p className="text-xs text-jungle-500 mt-3 font-sans">
-                  Can't find your exact duration? Just pick the closest — we'll adjust!
+                  Can&apos;t find your exact duration? Just pick the closest — we&apos;ll adjust!
                 </p>
               </div>
             </div>
@@ -189,7 +189,7 @@ export default function CustomPackageForm() {
           {step === 3 && (
             <div>
               <p className="text-sm font-sans text-jungle-600 dark:text-jungle-400 mb-5">
-                Select all destinations you'd like to visit <span className="text-jungle-500">(choose as many as you like)</span>
+                Select all destinations you&apos;d like to visit <span className="text-jungle-500">(choose as many as you like)</span>
               </p>
               <div className="flex flex-wrap gap-2.5">
                 {customPackageDestinations.map((dest) => {

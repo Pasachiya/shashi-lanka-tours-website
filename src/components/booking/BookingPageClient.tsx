@@ -42,7 +42,7 @@ function BookingContent() {
             Plan Your Journey
           </h1>
           <p className="font-sans text-jungle-300 text-base sm:text-lg max-w-lg mx-auto">
-            Fill in the form — we'll confirm your booking via WhatsApp within the hour.
+            Fill in the form — we&apos;ll confirm your booking via WhatsApp within the hour.
           </p>
         </div>
       </div>

@@ -33,7 +33,7 @@ export default function Testimonials() {
 
             {/* Large quote mark */}
             <div className="absolute top-4 right-8 font-display text-9xl text-jungle-100 dark:text-jungle-800 leading-none select-none pointer-events-none">
-              "
+              &quot;
             </div>
 
             {/* Stars */}

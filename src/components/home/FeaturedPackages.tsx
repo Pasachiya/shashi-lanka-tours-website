@@ -132,7 +132,7 @@ export default function FeaturedPackages() {
               None of these quite right?
             </h3>
             <p className="text-jungle-300 text-sm sm:text-base">
-              Design your own custom Sri Lanka itinerary — we'll build it around you.
+              Design your own custom Sri Lanka itinerary — we&apos;ll build it around you.
             </p>
           </div>
           <Link

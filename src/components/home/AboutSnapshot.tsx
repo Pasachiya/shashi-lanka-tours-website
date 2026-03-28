@@ -21,7 +21,7 @@ export default function AboutSnapshot() {
               {/* Overlay text */}
               <div className="absolute bottom-6 left-6 right-6">
                 <p className="font-display text-2xl italic text-white leading-tight">
-                  "The island that changes you forever"
+                  &quot;The island that changes you forever&quot;
                 </p>
               </div>
             </div>
@@ -51,12 +51,12 @@ export default function AboutSnapshot() {
 
             <p className="section-sub mb-5">
               Shashi Lanka Tours was born from a deep love of this extraordinary island. For three
-              years, we've been connecting travelers from around the world with the authentic heart
+              years, we&apos;ve been connecting travelers from around the world with the authentic heart
               of Sri Lanka — its ancient history, vibrant culture, and breathtaking natural beauty.
             </p>
 
             <p className="section-sub mb-8">
-              Every journey we craft is personal. Whether you're climbing the Sigiriya Rock at
+              Every journey we craft is personal. Whether you&apos;re climbing the Sigiriya Rock at
               sunrise or sipping Ceylon tea beside a misty plantation, we handle every detail so
               you can be fully present in every magical moment.
             </p>
