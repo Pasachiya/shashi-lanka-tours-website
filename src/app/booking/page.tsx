@@ -5,7 +5,7 @@ import WhatsAppFAB from "@/components/layout/WhatsAppFAB";
 export const metadata: Metadata = {
   title: "Book Your Tour",
   description:
-    "Book your Sri Lanka tour package with Shashi Lanka Tours. Choose from Heritage of the Island, Island Odyssey, Nature Paradise, or build a custom package.",
+    "Book your Sri Lanka tour package with Serendibroams. Choose from Heritage of the Island, Island Odyssey, Nature Paradise, or build a custom package.",
 };
 
 export default function BookingPage() {

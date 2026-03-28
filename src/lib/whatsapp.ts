@@ -1,4 +1,4 @@
-const WA_NUMBER = "94723133994";
+const WA_NUMBER = "94788873303";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
 
@@ -43,7 +43,7 @@ export interface CustomPackageData {
 
 export function buildBookingMessage(d: BookingData): string {
   const lines: string[] = [
-    "🌿 *BOOKING INQUIRY — Shashi Lanka Tours* 🌿",
+    "🌿 *BOOKING INQUIRY — Serendibroams* 🌿",
     "",
     "👤 *Personal Details*",
     `• Full Name : ${d.fullName}`,
@@ -65,7 +65,7 @@ export function buildBookingMessage(d: BookingData): string {
     lines.push("", "📝 *Special Requirements*", d.description.trim());
   }
 
-  lines.push("", "---", "_Sent via shashilankatours.lk_");
+  lines.push("", "---", "_Sent via serendibroams.com_");
 
   return lines.join("\n");
 }
@@ -76,7 +76,7 @@ export function buildCustomPackageMessage(d: CustomPackageData): string {
     : "TBD";
 
   const lines: string[] = [
-    "🌿 *CUSTOM PACKAGE REQUEST — Shashi Lanka Tours* 🌿",
+    "🌿 *CUSTOM PACKAGE REQUEST — Serendibroams* 🌿",
     "",
     "📅 *Travel Dates*",
     `• Arrival        : ${d.arrivalDate || "TBD"}`,
@@ -116,7 +116,7 @@ export function buildCustomPackageMessage(d: CustomPackageData): string {
     lines.push("", "📝 *Additional Notes*", d.notes.trim());
   }
 
-  lines.push("", "---", "_Custom Package Request via shashilankatours.lk_");
+  lines.push("", "---", "_Custom Package Request via serendibroams.com_");
 
   return lines.join("\n");
 }

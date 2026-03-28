@@ -23,7 +23,7 @@ export default function ValueProps() {
             Why Choose Us
           </div>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-white font-normal leading-tight mb-4">
-            The Shashi Lanka{" "}
+            The Serendibroams{" "}
             <span className="italic font-light text-jungle-400">Promise</span>
           </h2>
           <p className="font-sans text-jungle-400 text-base sm:text-lg leading-relaxed">

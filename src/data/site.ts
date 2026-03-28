@@ -1,17 +1,17 @@
 export const siteConfig = {
-  name: "Shashi Lanka Tours",
+  name: "Serendibroams",
   tagline: "Discover the Pearl of the Indian Ocean",
   description:
     "A three-year-old dedicated travel agency providing unparalleled tour experiences in Sri Lanka. Luxury, safety, and tailored experiences — all in one place.",
   contact: {
-    phone: "+94 72 313 3994",
-    whatsapp: "94723133994",
-    email: "info@shashilankatours.lk",
-    address: "No. 45, Galle Road, Colombo 03, Sri Lanka",
+    phone: "+94 78 887 3303",
+    whatsapp: "94788873303",
+    email: "hello@serendibroams.com",
+    address: "137/B, 1, Owala, Kiribathkumbura, Kandy, Sri Lanka",
   },
   social: {
-    facebook:  "https://facebook.com/shashilankatours",
-    instagram: "https://instagram.com/shashilankatours",
+    facebook:  "https://facebook.com/serendibroams",
+    instagram: "https://instagram.com/serendibroams",
   },
   stats: [
     { label: "Years of Experience", value: "3+" },
@@ -65,7 +65,7 @@ export const siteConfig = {
       avatar:  "SB",
       rating:  5,
       package: "Heritage of the Island",
-      text:    "Shashi Lanka Tours made our honeymoon absolutely unforgettable. Every detail was perfect — from the spice garden in Matale to the magical train ride through the tea country. Our guide Priyantha was knowledgeable, funny, and felt like a friend. Cannot recommend enough!",
+      text:    "Serendibroams made our honeymoon absolutely unforgettable. Every detail was perfect — from the spice garden in Matale to the magical train ride through the tea country. Our guide Priyantha was knowledgeable, funny, and felt like a friend. Cannot recommend enough!",
     },
     {
       id:      "t2",
@@ -83,7 +83,7 @@ export const siteConfig = {
       avatar:  "AV",
       rating:  5,
       package: "Nature Paradise",
-      text:    "As a wildlife photographer I chose Nature Paradise — best decision ever. The Sinharaja rainforest and Udawalawe elephant sanctuary were beyond my expectations. Shashi's team knew exactly the right spots and timing. My portfolio has never looked better!",
+      text:    "As a wildlife photographer I chose Nature Paradise — best decision ever. The Sinharaja rainforest and Udawalawe elephant sanctuary were beyond my expectations. The Serendibroams team knew exactly the right spots and timing. My portfolio has never looked better!",
     },
   ],
 };

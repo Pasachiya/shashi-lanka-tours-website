@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shashilankatours.lk/sitemap.xml
+Sitemap: https://serendibroams.com/sitemap.xml

@@ -57,7 +57,7 @@ export default function Navbar() {
             <Link
               href="/"
               className="flex items-center gap-2.5 group"
-              aria-label="Shashi Lanka Tours — Home"
+              aria-label="Serendibroams — Home"
             >
               <span
                 className={`
@@ -70,8 +70,7 @@ export default function Navbar() {
                 `}
               >
                 <span className="text-gold-500">✦</span>{" "}
-                Shashi{" "}
-                <span className="italic font-light">Lanka</span> Tours
+                Serendi<span className="italic font-light">broams</span>
               </span>
             </Link>
 
@@ -189,7 +188,7 @@ export default function Navbar() {
             📋 Book Your Tour
           </Link>
           <a
-            href="https://wa.me/94723133994"
+            href="https://wa.me/94788873303"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-3 btn-outline w-full"

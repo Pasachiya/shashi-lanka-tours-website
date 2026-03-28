@@ -38,8 +38,7 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-block mb-4">
               <span className="font-display text-xl font-semibold text-white">
-                <span className="text-gold-400">✦</span> Shashi{" "}
-                <span className="italic font-light">Lanka</span> Tours
+                <span className="text-gold-400">✦</span> Serendi<span className="italic font-light">broams</span>
               </span>
             </Link>
             <p className="text-jungle-400 text-sm leading-relaxed mb-5">
@@ -160,7 +159,7 @@ export default function Footer() {
       {/* ── Bottom bar ──────────────────────────────────── */}
       <div className="border-t border-jungle-800">
         <div className="container-xl section-px py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-jungle-600">
-          <p>© {year} Shashi Lanka Tours. All rights reserved.</p>
+          <p>© {year} Serendibroams. All rights reserved.</p>
           <p>Designed with 💚 for Sri Lanka</p>
         </div>
       </div>

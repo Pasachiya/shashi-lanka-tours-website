@@ -21,8 +21,8 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default:  "Shashi Lanka Tours — Discover the Pearl of the Indian Ocean",
-    template: "%s | Shashi Lanka Tours",
+    default:  "Serendibroams — Discover the Pearl of the Indian Ocean",
+    template: "%s | Serendibroams",
   },
   description:
     "A dedicated Sri Lankan travel agency offering luxury, cultural, and nature tours across the island. Heritage of the Island, Island Odyssey, Nature Paradise, and custom packages.",
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     "Sri Lanka tours, Sri Lanka travel, Sri Lanka holiday packages, Colombo tours, Sigiriya, Kandy, Ella, whale watching Sri Lanka",
   openGraph: {
     type:        "website",
-    siteName:    "Shashi Lanka Tours",
-    title:       "Shashi Lanka Tours — Discover the Pearl of the Indian Ocean",
+    siteName:    "Serendibroams",
+    title:       "Serendibroams — Discover the Pearl of the Indian Ocean",
     description: "Luxury, cultural and nature tours across Sri Lanka.",
   },
   robots: {

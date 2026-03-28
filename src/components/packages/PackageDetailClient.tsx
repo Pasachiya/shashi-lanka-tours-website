@@ -323,7 +323,7 @@ export default function PackageDetailClient({ pkg }: Props) {
                   Not sure? Our travel experts are happy to help you choose.
                 </p>
                 <a
-                  href="https://wa.me/94723133994"
+                  href="https://wa.me/94788873303"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-jungle-600 dark:text-jungle-400 font-semibold text-sm hover:underline"

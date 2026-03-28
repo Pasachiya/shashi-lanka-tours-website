@@ -8,7 +8,7 @@ import Testimonials from "@/components/home/Testimonials";
 import WhatsAppFAB from "@/components/layout/WhatsAppFAB";
 
 export const metadata: Metadata = {
-  title: "Shashi Lanka Tours — Discover the Pearl of the Indian Ocean",
+  title: "Serendibroams — Discover the Pearl of the Indian Ocean",
   description:
     "Luxury, cultural, and nature tours across Sri Lanka. Heritage of the Island (11 days), Island Odyssey (6 days), Nature Paradise (14 days) and custom packages.",
 };

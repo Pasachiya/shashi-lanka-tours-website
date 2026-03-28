@@ -3,50 +3,81 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+const slides = [
+  {
+    image: "/images/hero-bg.jpg",
+    label: "Sri Lanka's Lush Highlands",
+    location: "Hill Country",
+  },
+  {
+    image: "/images/destinations/sigiriya.jpg",
+    label: "Ancient Rock Fortress",
+    location: "Sigiriya",
+  },
+  {
+    image: "/images/destinations/dambulla.jpg",
+    label: "Sacred Cave Temples",
+    location: "Dambulla",
+  },
+  {
+    image: "/images/destinations/temple-of-tooth.jpg",
+    label: "Temple of the Sacred Tooth Relic",
+    location: "Kandy",
+  },
+];
+
 export default function Hero() {
   const [mounted, setMounted] = useState(false);
-  useEffect(() => { setMounted(true); }, []);
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    setMounted(true);
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 5500);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
 
-      {/* ── Background Image + Gradient ─────────────────── */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
-        role="img"
-        aria-label="Aerial view of Sri Lanka's lush landscape"
-      />
-      {/* Gradient overlay — also serves as fallback if no image */}
-      <div className="absolute inset-0 bg-gradient-to-br from-jungle-950/95 via-jungle-900/85 to-jungle-800/70" />
+      {/* ── Slideshow Backgrounds ────────────────────────── */}
+      {slides.map((slide, i) => (
+        <div
+          key={slide.image}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('${slide.image}')`,
+            opacity: i === current ? 1 : 0,
+            transform: i === current ? "scale(1.06)" : "scale(1)",
+            transition: "opacity 1.2s ease-in-out, transform 7s ease-in-out",
+          }}
+          role="img"
+          aria-label={slide.label}
+        />
+      ))}
 
-      {/* Subtle pattern overlay */}
-      <div
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 2px 2px, #4ade80 1px, transparent 0)",
-          backgroundSize: "48px 48px",
-        }}
-      />
+      {/* Cinematic dark overlay — minimal green */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent" />
 
       {/* ── Content ─────────────────────────────────────── */}
       <div className="relative z-10 container-xl section-px pt-24 pb-16 sm:pt-32">
         <div className="max-w-3xl">
 
-          {/* Eyebrow */}
+          {/* Eyebrow badge */}
           <div
             className={`
               inline-flex items-center gap-2 mb-6
-              bg-jungle-700/40 backdrop-blur-sm
-              border border-jungle-500/30
+              bg-white/10 backdrop-blur-sm
+              border border-white/20
               rounded-full px-4 py-2
               transition-all duration-700
               ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}
             `}
           >
             <span className="w-2 h-2 rounded-full bg-gold-400 animate-pulse" />
-            <span className="text-jungle-200 text-xs sm:text-sm font-sans font-medium tracking-wider uppercase">
+            <span className="text-white/90 text-xs sm:text-sm font-sans font-medium tracking-wider uppercase">
               Sri Lanka&apos;s Premier Travel Experience
             </span>
           </div>
@@ -63,20 +94,20 @@ export default function Hero() {
           >
             Discover the{" "}
             <span className="text-gold-400 not-italic font-normal">Soul</span>
-            {" "}of{" "}
-            <span className="text-jungle-300">Sri Lanka</span>
+            {" "}
+            <span className="whitespace-nowrap">of <span className="text-amber-200">Sri Lanka</span></span>
           </h1>
 
           {/* Subheading */}
           <p
             className={`
-              font-sans text-jungle-200 text-base sm:text-lg lg:text-xl
+              font-sans text-white/75 text-base sm:text-lg lg:text-xl
               leading-relaxed max-w-xl mb-10
               transition-all duration-700 delay-300
               ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}
             `}
           >
-            Shashi Lanka Tours crafts extraordinary journeys through ancient kingdoms,
+            Serendibroams crafts extraordinary journeys through ancient kingdoms,
             misty highlands, and pristine coastlines — with luxury, safety, and genuine care.
           </p>
 
@@ -91,7 +122,10 @@ export default function Hero() {
             <Link href="/#packages" className="btn-gold text-sm sm:text-base">
               ✦ Explore Packages
             </Link>
-            <Link href="/booking" className="btn-outline border-white/50 text-white hover:bg-white/10 hover:border-white text-sm sm:text-base">
+            <Link
+              href="/booking"
+              className="btn-outline border-white/50 text-white hover:bg-white/10 hover:border-white text-sm sm:text-base"
+            >
               Book Your Journey →
             </Link>
           </div>
@@ -99,7 +133,7 @@ export default function Hero() {
           {/* Trust signals */}
           <div
             className={`
-              flex flex-wrap gap-6 mt-12
+              flex flex-wrap gap-8 mt-12
               transition-all duration-700 delay-700
               ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}
             `}
@@ -113,7 +147,7 @@ export default function Hero() {
                 <div className="font-display text-2xl sm:text-3xl text-gold-400 font-semibold">
                   {stat.value}
                 </div>
-                <div className="font-sans text-xs text-jungle-400 tracking-wide">
+                <div className="font-sans text-xs text-white/50 tracking-wide uppercase">
                   {stat.label}
                 </div>
               </div>
@@ -122,20 +156,54 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* ── Scroll indicator ────────────────────────────── */}
+      {/* ── Slide indicators & location label ───────────── */}
       <div
         className={`
-          absolute bottom-8 left-1/2 -translate-x-1/2
-          flex flex-col items-center gap-2
+          absolute bottom-20 left-1/2 -translate-x-1/2 z-20
+          flex flex-col items-center gap-3
           transition-all duration-700 delay-1000
           ${mounted ? "opacity-100" : "opacity-0"}
         `}
       >
-        <span className="font-sans text-xs text-jungle-400 tracking-widest uppercase">Scroll</span>
-        <div className="w-px h-10 bg-gradient-to-b from-jungle-400 to-transparent animate-pulse" />
+        {/* Current location pill */}
+        <div className="flex items-center gap-2 bg-black/40 backdrop-blur-sm rounded-full px-4 py-1.5 border border-white/15">
+          <span className="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse" />
+          <span className="text-white/80 text-xs font-sans tracking-widest uppercase">
+            {slides[current].location}
+          </span>
+        </div>
+
+        {/* Progress dots */}
+        <div className="flex items-center gap-2">
+          {slides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrent(i)}
+              aria-label={`Go to slide ${i + 1}: ${slides[i].location}`}
+              className={`rounded-full transition-all duration-400 ${
+                i === current
+                  ? "w-8 h-2 bg-gold-400"
+                  : "w-2 h-2 bg-white/35 hover:bg-white/65"
+              }`}
+            />
+          ))}
+        </div>
       </div>
 
-      {/* ── Decorative bottom curve ──────────────────────── */}
+      {/* ── Scroll indicator ────────────────────────────── */}
+      <div
+        className={`
+          absolute bottom-7 left-1/2 -translate-x-1/2
+          flex flex-col items-center gap-1.5
+          transition-all duration-700 delay-1200
+          ${mounted ? "opacity-100" : "opacity-0"}
+        `}
+      >
+        <span className="font-sans text-[10px] text-white/35 tracking-widest uppercase">Scroll</span>
+        <div className="w-px h-6 bg-gradient-to-b from-white/35 to-transparent animate-pulse" />
+      </div>
+
+      {/* ── Bottom curve ────────────────────────────────── */}
       <div className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none">
         <svg
           viewBox="0 0 1440 60"

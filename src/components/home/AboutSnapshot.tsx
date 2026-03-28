@@ -50,7 +50,7 @@ export default function AboutSnapshot() {
             </h2>
 
             <p className="section-sub mb-5">
-              Shashi Lanka Tours was born from a deep love of this extraordinary island. For three
+              Serendibroams was born from a deep love of this extraordinary island. For three
               years, we&apos;ve been connecting travelers from around the world with the authentic heart
               of Sri Lanka — its ancient history, vibrant culture, and breathtaking natural beauty.
             </p>
