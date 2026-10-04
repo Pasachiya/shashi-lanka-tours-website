@@ -161,7 +161,7 @@ export default function StandardBookingForm({ initialPackage = "" }: Props) {
                   <option value="">Select a package</option>
                   {packages.map((p) => (
                     <option key={p.id} value={p.name}>
-                      {p.name} — {p.duration} Days ({p.priceFrom})
+                      {p.name} — {p.duration} Days
                     </option>
                   ))}
                   <option value="Custom Package">Custom Package (I&apos;ll describe below)</option>

@@ -70,6 +70,21 @@ export default function Footer() {
                 </svg>
               </a>
               <a
+                href={siteConfig.social.tripadvisor}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TripAdvisor"
+                className="w-9 h-9 rounded-lg bg-jungle-800 hover:bg-jungle-700 flex items-center justify-center text-jungle-300 hover:text-white transition-all duration-200"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+                  <circle cx="6.5" cy="13.5" r="4"/>
+                  <circle cx="17.5" cy="13.5" r="4"/>
+                  <circle cx="6.5" cy="13.5" r="1" fill="currentColor"/>
+                  <circle cx="17.5" cy="13.5" r="1" fill="currentColor"/>
+                  <path d="M2 8.5h4.5M17.5 8.5H22M6.5 8.5C8.5 6.8 10.2 6 12 6s3.5.8 5.5 2.5M12 6v0M10 17.5l2 2.5 2-2.5"/>
+                </svg>
+              </a>
+              <a
                 href={`https://wa.me/${siteConfig.contact.whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"

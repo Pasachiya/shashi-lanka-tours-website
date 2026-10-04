@@ -5,6 +5,7 @@ import FeaturedDestinations from "@/components/home/FeaturedDestinations";
 import FeaturedPackages from "@/components/home/FeaturedPackages";
 import ValueProps from "@/components/home/ValueProps";
 import Testimonials from "@/components/home/Testimonials";
+import Gallery from "@/components/home/Gallery";
 import WhatsAppFAB from "@/components/layout/WhatsAppFAB";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function HomePage() {
       <AboutSnapshot />
       <FeaturedDestinations />
       <FeaturedPackages />
+      <Gallery />
       <ValueProps />
       <Testimonials />
       <WhatsAppFAB />

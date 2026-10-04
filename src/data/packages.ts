@@ -20,7 +20,6 @@ export interface TourPackage {
   highlights:   string[];
   includes:     string[];
   excludes:     string[];
-  priceFrom:    string;         // demo starting price
   groupSize:    string;
   image:        string;
   gradient:     string;         // fallback gradient
@@ -63,7 +62,6 @@ export const packages: TourPackage[] = [
       "Personal expenses & tips",
       "International airfare",
     ],
-    priceFrom:  "USD 850",
     groupSize:  "1 – 15 pax",
     image:      "/images/packages/heritage.jpg",
     gradient:   "from-amber-900 via-jungle-900 to-jungle-700",
@@ -264,7 +262,6 @@ export const packages: TourPackage[] = [
       "Travel insurance",
       "International airfare",
     ],
-    priceFrom:  "USD 450",
     groupSize:  "1 – 12 pax",
     image:      "/images/packages/odyssey.jpg",
     gradient:   "from-jungle-900 via-teal-800 to-emerald-700",
@@ -396,7 +393,6 @@ export const packages: TourPackage[] = [
       "Travel insurance",
       "International airfare",
     ],
-    priceFrom:  "USD 1,250",
     groupSize:  "1 – 10 pax",
     image:      "/images/packages/nature.jpg",
     gradient:   "from-emerald-900 via-jungle-800 to-teal-700",

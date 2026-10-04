@@ -89,17 +89,10 @@ export default function FeaturedPackages() {
                   ))}
                 </ul>
 
-                {/* Price & actions */}
+                {/* Details & actions */}
                 <div className="border-t border-jungle-100 dark:border-jungle-800 pt-4">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <span className="text-xs text-jungle-500 dark:text-jungle-500 block">Starting from</span>
-                      <span className="font-display text-xl font-semibold text-jungle-800 dark:text-jungle-200">
-                        {pkg.priceFrom}
-                      </span>
-                      <span className="text-xs text-jungle-500 ml-1">/ person</span>
-                    </div>
-                    <div className="text-right">
                       <span className="text-xs text-jungle-500 block">{pkg.durationNight}N / {pkg.duration}D</span>
                       <span className="text-xs text-jungle-600 dark:text-jungle-400">{pkg.groupSize}</span>
                     </div>

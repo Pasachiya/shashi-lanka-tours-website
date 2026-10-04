@@ -100,6 +100,18 @@ export default function Testimonials() {
               →
             </button>
           </div>
+
+          {/* TripAdvisor link */}
+          <div className="text-center mt-10">
+            <a
+              href={siteConfig.social.tripadvisor}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline"
+            >
+              Read Our Reviews on TripAdvisor →
+            </a>
+          </div>
         </div>
       </div>
     </section>

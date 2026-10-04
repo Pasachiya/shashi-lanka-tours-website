@@ -76,7 +76,6 @@ export default function PackageDetailClient({ pkg }: Props) {
             {[
               { icon: "🗓️", label: "Duration",   value: `${pkg.duration} Days / ${pkg.durationNight} Nights` },
               { icon: "👥", label: "Group Size", value: pkg.groupSize },
-              { icon: "💰", label: "From",       value: pkg.priceFrom },
             ].map((s) => (
               <div key={s.label} className="flex items-center gap-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2.5">
                 <span className="text-lg">{s.icon}</span>
@@ -281,11 +280,10 @@ export default function PackageDetailClient({ pkg }: Props) {
               {/* Book card */}
               <div className="bg-white dark:bg-jungle-900 rounded-2xl p-6 border border-jungle-100 dark:border-jungle-800 shadow-xl shadow-jungle-900/10">
                 <div className="mb-5">
-                  <span className="font-sans text-xs text-jungle-500 dark:text-jungle-400">Starting from</span>
-                  <div className="font-display text-4xl text-jungle-800 dark:text-jungle-200 font-semibold">
-                    {pkg.priceFrom}
+                  <div className="font-display text-3xl text-jungle-800 dark:text-jungle-200 font-semibold">
+                    Book This Tour
                   </div>
-                  <div className="font-sans text-xs text-jungle-500 mt-1">per person · {pkg.duration} days</div>
+                  <div className="font-sans text-xs text-jungle-500 mt-1">{pkg.duration} days · contact us for a custom quote</div>
                 </div>
 
                 {/* Info pills */}
