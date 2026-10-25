@@ -166,6 +166,16 @@ export default function Footer() {
                   {siteConfig.contact.email}
                 </a>
               </li>
+              <li className="flex gap-3 text-sm">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 mt-0.5 shrink-0 text-jungle-500">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+                <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" className="text-jungle-400 hover:text-jungle-200 transition-colors">
+                  {siteConfig.social.instagramHandle}
+                </a>
+              </li>
             </ul>
           </div>
         </div>

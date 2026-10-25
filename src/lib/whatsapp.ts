@@ -30,7 +30,6 @@ export interface CustomPackageData {
   travelStyle:   string;
   accommodation: string;
   interests:     string[];
-  budget:        string;
   // Step 5
   fullName:      string;
   email:         string;
@@ -94,9 +93,7 @@ export function buildCustomPackageMessage(d: CustomPackageData): string {
     "",
     "🎯 *Preferences*",
     `• Travel Style   : ${d.travelStyle || "Not specified"}`,
-    `• Accommodation  : ${d.accommodation || "Not specified"}`,
-    `• Budget Range   : ${d.budget || "Not specified"}`,
-  ];
+    `• Accommodation  : ${d.accommodation || "Not specified"}`,  ];
 
   if (d.interests.length) {
     lines.push("", "⭐ *Special Interests*");

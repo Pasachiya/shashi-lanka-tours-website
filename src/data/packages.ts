@@ -608,4 +608,3 @@ export const customPackageDestinations = [
 export const travelStyles = ["Cultural & Heritage", "Wildlife & Nature", "Adventure & Hiking", "Beach & Relaxation", "Mixed / All-Inclusive"];
 export const accommodationTypes = ["Budget (2-star)", "Comfort (3-star)", "Premium (4-star)", "Luxury (5-star)", "Eco-Lodges"];
 export const specialInterests = ["Wildlife Photography", "Bird Watching", "Ayurveda & Wellness", "Water Sports", "Cooking Classes", "Tea Plantation Visits", "Whale Watching", "Cycling Tours", "Temple & Religious Sites", "Local Village Experiences"];
-export const budgetRanges = ["USD 300 – 600", "USD 600 – 1,000", "USD 1,000 – 1,500", "USD 1,500 – 2,500", "USD 2,500+"];

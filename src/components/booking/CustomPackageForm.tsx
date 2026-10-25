@@ -6,7 +6,6 @@ import {
   travelStyles,
   accommodationTypes,
   specialInterests,
-  budgetRanges,
 } from "@/data/packages";
 import {
   buildCustomPackageMessage,
@@ -32,7 +31,6 @@ const initData = (): CustomPackageData => ({
   travelStyle:   "",
   accommodation: "",
   interests:     [],
-  budget:        "",
   fullName:      "",
   email:         "",
   phone:         "",
@@ -252,20 +250,6 @@ export default function CustomPackageForm() {
                 </div>
               </div>
               <div>
-                <label className="label">Budget Range</label>
-                <div className="flex flex-wrap gap-2">
-                  {budgetRanges.map((b) => (
-                    <button key={b} onClick={() => update({ budget: b })}
-                      className={`px-4 py-2.5 rounded-xl text-sm font-sans font-medium border-2 transition-all duration-200
-                        ${data.budget === b
-                          ? "bg-gold-500 text-white border-gold-500"
-                          : "border-jungle-200 dark:border-jungle-700 text-jungle-700 dark:text-jungle-300 hover:border-jungle-400"
-                        }`}
-                    >{b}</button>
-                  ))}
-                </div>
-              </div>
-              <div>
                 <label className="label">Special Interests <span className="text-jungle-500 font-normal">(optional, multi-select)</span></label>
                 <div className="flex flex-wrap gap-2">
                   {specialInterests.map((i) => {
@@ -332,9 +316,7 @@ export default function CustomPackageForm() {
                   <p>👥 Group: <strong className="text-jungle-800 dark:text-jungle-200">{data.adults} adults, {data.children} children</strong></p>
                   {data.destinations.length > 0 && (
                     <p>🗺️ Destinations: <strong className="text-jungle-800 dark:text-jungle-200">{data.destinations.slice(0, 3).join(", ")}{data.destinations.length > 3 ? ` +${data.destinations.length - 3} more` : ""}</strong></p>
-                  )}
-                  {data.budget && <p>💰 Budget: <strong className="text-jungle-800 dark:text-jungle-200">{data.budget}</strong></p>}
-                </div>
+                  )}                </div>
               </div>
             </div>
           )}

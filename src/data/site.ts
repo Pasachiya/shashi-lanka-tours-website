@@ -11,7 +11,8 @@ export const siteConfig = {
   },
   social: {
     facebook:  "https://facebook.com/serendibroams",
-    instagram: "https://instagram.com/serendibroams",
+    instagram: "https://www.instagram.com/serendib_roams",
+    instagramHandle: "@serendib_roams",
     tripadvisor: "https://www.tripadvisor.com/Attraction_Review-g1194819-d25300313-Reviews-Serendib_Roams_Holiday_Tours-Peradeniya_Kandy_District_Central_Province.html",
   },
   stats: [
